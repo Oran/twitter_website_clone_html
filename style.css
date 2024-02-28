@@ -4,6 +4,7 @@ body {
     background-color: black;
     margin: 0px;
     color: white;
+    font-family: "Roboto";
 }
 
 .page {
@@ -15,7 +16,7 @@ body {
 }
 
 .sideBar {
-    background-color: rgb(26, 26, 26);
+    background-color: black;
     width: 100%;
     padding: 40px;
     padding-top: 0px;
@@ -26,12 +27,14 @@ body {
     left: 0px;
 }
 .mainContent {
-    background-color: rgb(54, 54, 54);
+    background-color: black;
     /* flex: 2; */
     position: relative;
     padding-top: 0px;
     align-items: stretch;
     width: 35%;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
 }
 .rightBar {
     background-color: rgb(85, 85, 85);
@@ -49,6 +52,7 @@ body {
     text-align: center;
     flex-direction: row;
     top: 0px;
+    border-bottom: 1px solid gray;
 }
 
 .foryou_button {
@@ -72,10 +76,67 @@ body {
     margin: 0px;
 }
 
+/* CREATE POST */
+
 .post_tweet {
-    background-color: cadetblue;
-    height: 200px;
+    display: flex;
+    background-color: black;
+    height: 120px;
     margin: 5px;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+
+.post_tweet_profile_image {
+    display: inline;
+    padding: 10px;
+    flex: 1;
+}
+
+img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.post_tweet_input_container {
+    width: 100%;
+}
+
+.post_tweet_input {
+    background-color: black;
+    height: 70px;
+    width: inherit;
+    box-sizing: border-box;
+    border-radius: 20px;
+    flex: 2;
+    margin-left: 10px;
+}
+
+input {
+    outline: none;
+    border: 0px solid;
+    font-size: 20px;
+    color: white;
+}
+
+.post_tweet_button {
+    display: flex;
+    background-color: #1a8cd8;
+    height: 40px;
+    width: 130px;
+    border-radius: 30px;
+    justify-content: center;
+    align-content: center;
+    font-size: 11px;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.post_tweet_button:hover {
+    background-color: #167fc5;
 }
 
 .demo_post {
