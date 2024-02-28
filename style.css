@@ -36,11 +36,6 @@ body {
     border-left: 1px solid gray;
     border-right: 1px solid gray;
 }
-.rightBar {
-    background-color: rgb(85, 85, 85);
-    width: 100%;
-    flex: 1;
-}
 
 /* MAIN CONTENT */
 
@@ -140,7 +135,7 @@ input {
 }
 
 .demo_post {
-    background-color: rgb(28, 95, 74);
+    background-color: rgb(33, 34, 34);
     height: 500px;
     margin: 5px;
 }
@@ -198,4 +193,55 @@ ul {
 
 .sideBar_post_button:hover {
     background-color: #167fc5;
+}
+
+/* Right Bar */
+
+.rightBar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    flex: 1;
+    padding: 10px 0px 0px 20px;
+}
+
+.rightBar_contents {
+    position: fixed;
+}
+
+.search_container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #16181c;
+    border-radius: 30px;
+    height: 40px;
+}
+
+.search_textInput {
+    background-color: #16181c;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.search_icon {
+    font-size: 20px;
+    color: gray;
+}
+
+.whats_happening_container {
+    height: 500px;
+    width: 300px;
+    margin-top: 20px;
+    background-color: #16181c;
+    border-radius: 15px;
+}
+
+.whoToFollow_container {
+    margin-top: 20px;
+    height: 300px;
+    width: 300px;
+    background-color: #16181c;
+    border-radius: 15px;
 }
