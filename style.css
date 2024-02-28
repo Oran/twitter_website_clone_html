@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+    background-color: black;
+    margin: 0px;
+    color: white;
+}
+
+.page {
+    display: flex;
+    /* flex-direction: row; */
+    height: 100%;
+    width: 100%;
+    /* justify-content: center; */
+}
+
+.sideBar {
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    padding: 40px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: end;
+    flex: 1;
+    top: 0px;
+    left: 0px;
+}
+.mainContent {
+    background-color: rgb(54, 54, 54);
+    /* flex: 2; */
+    position: relative;
+    padding-top: 0px;
+    align-items: stretch;
+    width: 35%;
+}
+.rightBar {
+    background-color: rgb(85, 85, 85);
+    width: 100%;
+    flex: 1;
+}
+
+/* MAIN CONTENT */
+
+.forYou_following {
+    display: flex;
+    position: sticky;
+    justify-content: space-around;
+    /* background-color: black; */
+    text-align: center;
+    flex-direction: row;
+    top: 0px;
+}
+
+.foryou_button {
+    display: flex;
+    background-color: black;
+    margin: 0px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    flex: 1;
+}
+
+.foryou_button:hover {
+    background-color: rgb(22, 22, 22);
+}
+
+.foryou_button_text {
+    font-family: "roboto";
+    font-size: 1rem;
+    margin: 0px;
+}
+
+.post_tweet {
+    background-color: cadetblue;
+    height: 200px;
+    margin: 5px;
+}
+
+.demo_post {
+    background-color: rgb(28, 95, 74);
+    height: 500px;
+    margin: 5px;
+}
+
+/* SIDE BAR */
+
+.sideBar_logo {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+ion-icon {
+    font-size: 25px;
+    color: white;
+}
+
+ul {
+    position: fixed;
+}
+
+.sideBar_button {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.sideBar_button:hover {
+    background-color: #1b1b1b;
+}
+
+.sideBar_button_text {
+    padding-left: 10px;
+    font-family: "Roboto";
+    font-weight: 100;
+    color: white;
+}
+
+.sideBar_post_button_text {
+    font-size: 1rem;
+    color: white;
+    font-family: "Roboto";
+}
+
+.sideBar_post_button {
+    display: flex;
+    background-color: #1a8cd8;
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    justify-content: center;
+    align-content: center;
+}
+
+.sideBar_post_button:hover {
+    background-color: #167fc5;
+}
