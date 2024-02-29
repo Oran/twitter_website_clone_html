@@ -26,6 +26,7 @@ body {
     top: 0px;
     left: 0px;
 }
+
 .mainContent {
     background-color: black;
     /* flex: 2; */
@@ -196,6 +197,13 @@ ul {
     background-color: #167fc5;
 }
 
+.sideBar_post_icon {
+    display: none;
+    text-align: center;
+    align-self: center;
+    font-size: 1.5rem;
+}
+
 /* Right Bar */
 
 .rightBar {
@@ -335,4 +343,42 @@ ul {
 
 .whoToFollow_followButton:hover {
     background-color: rgb(204, 204, 204);
+}
+
+@media (max-width: 1100px) {
+    .sideBar {
+        width: 100px;
+        padding: 20px;
+        flex: 0.2;
+    }
+
+    .sideBar ul {
+        padding: 0px;
+    }
+
+    .sideBar_button_text {
+        display: none;
+    }
+    .sideBar_button {
+        width: inherit;
+        padding: 18px;
+    }
+    .sideBar_post_button {
+        width: 50px;
+        margin-left: 10px;
+    }
+    .sideBar_post_button_text {
+        display: none;
+    }
+    .sideBar_post_icon {
+        display: block;
+    }
+
+    .mainContent {
+        flex: auto;
+    }
+
+    .rightBar {
+        display: none;
+    }
 }
