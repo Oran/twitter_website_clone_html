@@ -136,10 +136,101 @@ input {
     background-color: #167fc5;
 }
 
+/* POSTS */
+
 .demo_post {
-    background-color: rgb(33, 34, 34);
-    height: 500px;
+    /* background-color: rgb(33, 34, 34); */
+    /* height: 500px; */
     margin: 5px;
+}
+
+.post_contents {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(56, 49, 49); */
+}
+
+/* .post_profile {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+} */
+
+.post_profile_image {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.post_display_username {
+    display: flex;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.post_display_username h3 {
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.post_display_username p {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    color: gray;
+}
+
+.post_data {
+    /* background-color: rgb(63, 42, 42); */
+    height: 100%;
+    width: 100%;
+}
+
+.post_text p {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.post_text img {
+    margin: 10px;
+    border-radius: 10px;
+    width: inherit;
+    height: inherit;
+    max-height: 400px;
+    max-width: 95%;
+}
+
+.post_bottom_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.post_buttom_single_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post_buttom_single_button ion-icon {
+    font-size: 18px;
+    color: gray;
+}
+
+.post_buttom_single_button ion-icon:hover {
+    color: white;
+}
+
+.post_buttom_single_button p {
+    font-size: 15px;
+    color: gray;
+    margin-left: 5px;
 }
 
 /* SIDE BAR */
@@ -332,7 +423,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 65px;
+    margin-left: 124px;
 }
 
 .whoToFollow_followButton p {
@@ -376,6 +467,11 @@ ul {
 
     .mainContent {
         flex: auto;
+        margin-right: 15px;
+    }
+
+    .post_text img {
+        max-width: 300px;
     }
 
     .rightBar {
