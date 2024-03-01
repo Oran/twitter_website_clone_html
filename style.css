@@ -478,3 +478,10 @@ ul {
         display: none;
     }
 }
+
+@media (max-width: 500px) {
+    .post_text img {
+        max-width: 90%;
+    }
+    
+}
